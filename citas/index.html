@@ -1,0 +1,148 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Reserva tu cita · Dr. Ricardo Celle</title>
+<meta name="description" content="Consulta online con receta electrónica QR y tratamiento médico de la alopecia (PRP y mesoterapia capilar). Dr. Ricardo Celle, médico colegiado 67782 COMB, Barcelona.">
+<meta property="og:title" content="Reserva tu cita · Dr. Ricardo Celle">
+<meta property="og:description" content="Consulta online + receta QR · Tratamiento médico de la alopecia · Barcelona y online · 6 idiomas">
+<meta property="og:image" content="https://www.ricardocelle.com/campana/alopecia_es.jpg">
+<link rel="icon" href="/favicon.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap">
+<style>
+:root{--ink:#0a0907;--ink2:#14110d;--paper:#efe9dd;--mute:#a99f8d;--gold:#c9a24b;--hi:#ecd593;--line:rgba(201,162,75,.32);--fd:"Cormorant Garamond",Georgia,serif;--fb:"Jost",Arial,sans-serif;color-scheme:dark}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 50% 0,#2a2214 0,#0a0907 60%) fixed;color:var(--paper);font:300 17px/1.6 var(--fb)}
+a{color:var(--hi)}.w{max-width:880px;margin:0 auto;padding:0 18px}
+header{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font:600 22px var(--fd);letter-spacing:.08em;color:var(--hi);text-decoration:none}
+.lang{display:flex;gap:6px}.lang button{background:none;border:1px solid var(--line);color:var(--mute);font:500 12px var(--fb);letter-spacing:.1em;padding:6px 9px;border-radius:20px;cursor:pointer}
+.lang button.on{color:#111;background:var(--gold);border-color:var(--gold)}
+h1{font:500 clamp(38px,8vw,64px)/1.05 var(--fd);margin:28px 0 8px;background:linear-gradient(180deg,var(--hi),var(--gold));-webkit-background-clip:text;background-clip:text;color:transparent}
+.eye{letter-spacing:.28em;text-transform:uppercase;font-size:13px;color:var(--gold)}
+.sub{color:var(--mute);margin:0 0 26px}
+.cards{display:grid;gap:14px;margin:22px 0}@media(min-width:700px){.cards{grid-template-columns:1fr 1fr}}
+.card{border:1px solid var(--line);border-radius:18px;padding:22px;background:rgba(20,17,13,.85)}
+.card h3{margin:0 0 4px;font:500 20px var(--fb)}.card p{margin:0;color:var(--mute);font-size:15px}
+.price{font:600 44px var(--fd);color:var(--hi);margin-top:10px}
+.steps{counter-reset:s;list-style:none;padding:0;margin:20px 0}
+.steps li{counter-increment:s;position:relative;padding:0 0 18px 52px}
+.steps li:before{content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;color:var(--hi);font:500 18px var(--fd)}
+.btn{display:block;text-align:center;text-decoration:none;font:500 15px var(--fb);letter-spacing:.16em;text-transform:uppercase;padding:17px 20px;border-radius:40px;margin:10px 0}
+.gold{background:linear-gradient(90deg,#c9a24b,#ecd593,#b88f3a);color:#111}.line{border:1px solid var(--gold);color:var(--hi)}
+.pay{border:1px solid var(--line);border-radius:18px;padding:20px;margin:16px 0;background:rgba(20,17,13,.85)}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:12px 0;border-bottom:1px solid rgba(201,162,75,.15)}.row:last-child{border:0}
+.row b{font-weight:500}.row span{color:var(--mute);font-size:14px;word-break:break-all}
+.copy{background:none;border:1px solid var(--line);color:var(--hi);border-radius:16px;padding:6px 12px;font:400 13px var(--fb);cursor:pointer;white-space:nowrap}
+.note{font-size:14px;color:var(--mute)}.lb{display:block;margin:14px 0 6px;font-size:14px;color:var(--hi)}.in{width:100%;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:#0e0c09;color:var(--paper);font:300 16px var(--fb)}.opt{display:flex;gap:10px;align-items:flex-start;padding:6px 0;font-size:15px}.opt input{margin-top:5px;accent-color:#c9a24b}h2{font:500 30px var(--fd);color:var(--hi);margin:38px 0 8px}
+footer{padding:40px 0;color:var(--mute);font-size:13px;text-align:center}
+</style></head><body><div class="w">
+<header><a class="logo" href="/">RC · Dr. Ricardo Celle</a><div class="lang" id="lang"></div></header>
+<div class="eye" data-t="eye"></div>
+<h1 data-t="h1"></h1>
+<p class="sub" data-t="sub"></p>
+<div class="cards">
+ <div class="card"><h3 data-t="c1"></h3><p data-t="c1p"></p><div class="price" data-t="ask" style="font-size:1rem;letter-spacing:.04em"></div></div>
+ <div class="card"><h3 data-t="c2"></h3><p data-t="c2p"></p><div class="price" data-t="ask" style="font-size:1rem;letter-spacing:.04em"></div></div>
+</div>
+<h2 data-t="how"></h2>
+<ol class="steps"><li data-t="s1"></li><li data-t="s2"></li><li data-t="s3"></li><li data-t="s4"></li></ol>
+<a class="btn gold" id="book" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ30hjlonWedo9YIEUixhJI1raPVThpXiTwQOOv44FRM2iB_wU3n4SQKaxK7BbhD3CPq1F-qffGn" data-t="b1"></a>
+<h2 id="pago" data-t="payh"></h2>
+<div class="pay">
+ <div class="row"><div><b>Revolut</b><br><span>@ricardocelle · revolut.me/ricardocelle</span></div><a class="copy" href="https://revolut.me/ricardocelle" target="_blank" rel="noopener" data-t="open"></a></div>
+ <div class="row"><div><b>Bizum</b><br><span>+34 685 921 660</span></div><button class="copy" data-c="+34685921660" data-t="cp"></button></div>
+</div>
+<p class="note" data-t="rev"></p>
+<h2 id="confirmar" data-t="fh"></h2>
+<p class="note" data-t="fp"></p>
+<form id="cf" class="pay">
+ <label class="lb" data-t="f_tr"></label>
+ <label class="opt"><input type="radio" name="tr" value="0" required> <span data-t="c2"></span></label>
+ <label class="opt"><input type="radio" name="tr" value="1"> <span data-t="c1"></span></label>
+ <label class="lb" data-t="f_nm"></label><input class="in" name="nm" required autocomplete="name">
+ <label class="lb" data-t="f_dob"></label><input class="in" name="dob" type="date" required>
+ <label class="lb">Email</label><input class="in" name="em" type="email" required autocomplete="email">
+ <label class="lb" data-t="f_ph"></label><input class="in" name="ph" type="tel" required autocomplete="tel">
+ <label class="lb" data-t="f_dt"></label><input class="in" name="dt" type="date">
+ <label class="lb" data-t="f_pm"></label>
+ <label class="opt"><input type="radio" name="pm" value="0" required> Revolut (@ricardocelle)</label>
+ <label class="opt"><input type="radio" name="pm" value="1"> Bizum (+34 685 921 660)</label>
+ <label class="lb" data-t="f_ref"></label><input class="in" name="ref">
+ <label class="opt"><input type="checkbox" required> <span data-t="f_ok"></span></label>
+ <button class="btn gold" type="submit" data-t="b2" style="width:100%;border:0;cursor:pointer"></button>
+</form>
+<div id="done" class="pay" hidden><p data-t="f_thx"></p><a class="btn gold" id="wa2" target="_blank" rel="noopener" data-t="b3"></a></div>
+<a class="btn line" id="wa" target="_blank" rel="noopener" href="https://wa.me/34685921660" data-t="b3"></a>
+<p class="note" data-t="dates"></p>
+<h2 data-t="vip"></h2>
+<p class="note" data-t="vipp"></p>
+<a class="btn line" href="/vip/" data-t="b4"></a>
+<footer>Dr. Ricardo Celle · Nº colegiado 67782 · Col·legi Oficial de Metges de Barcelona<br><a href="/">www.ricardocelle.com</a> · Instagram <a href="https://instagram.com/dr.ricardocelle">@dr.ricardocelle</a></footer>
+</div>
+<script>
+const T={
+es:{eye:"Barcelona · Online · 6 idiomas",h1:"Reserva tu cita médica",sub:"Atención personalizada por el Dr. Ricardo Celle, médico colegiado en Barcelona.",
+c1:"Tratamiento médico de la alopecia",c1p:"Valoración y plan personalizado. PRP y mesoterapia capilar, presencial en Barcelona. Hombres y mujeres.",
+c2:"Consulta online + receta QR",c2p:"Videoconsulta médica. Receta electrónica con código QR válida en farmacias de España, si está indicada.",
+how:"Cómo funciona",s1:"Elige día y hora en la agenda (lunes a viernes, 10–20 h).",s2:"El Dr. Celle te indica el importe por WhatsApp y pagas por Revolut o Bizum.",ask:"Precio por WhatsApp",s3:"Rellena el formulario de confirmación de esta página.",s4:"Te confirmamos por WhatsApp con la dirección de la clínica o el enlace de la videollamada.",
+b1:"1 · Elegir día y hora",payh:"Formas de pago",open:"Abrir",cp:"Copiar",rev:"Con Revolut el pago es instantáneo y sin comisiones entre cuentas Revolut. Bizum: solo cuentas bancarias españolas.",
+fh:"2 · Confirma tu cita",fp:"Después de pagar, completa tus datos. Los recibe directamente el Dr. Celle.",f_tr:"Tratamiento elegido",f_nm:"Nombre y apellidos",f_dob:"Fecha de nacimiento",f_ph:"Teléfono / WhatsApp",f_dt:"Fecha de la cita reservada",f_pm:"Método de pago",f_ref:"Titular del pago / referencia",f_ok:"Acepto que el Dr. Ricardo Celle trate mis datos para gestionar mi cita (RGPD).",
+b2:"Enviar confirmación",f_thx:"¡Gracias! Hemos recibido tus datos. Último paso: envía la captura del pago por WhatsApp.",b3:"WhatsApp: enviar comprobante",dates:"La cita queda confirmada al recibir el pago. Cambios o cancelaciones hasta 24 h antes.",
+vip:"Grupo VIP de pacientes",vipp:"Promociones, novedades y consejos médicos antes que nadie. Entra con un clic en tu red favorita.",b4:"Entrar al grupo VIP",wa:"Hola Dr. Celle, he reservado y pagado mi cita. Envío el comprobante."},
+pt:{eye:"Barcelona · Online · 6 idiomas",h1:"Agende sua consulta",sub:"Atendimento personalizado com o Dr. Ricardo Celle, médico brasileiro colegiado em Barcelona.",
+c1:"Tratamento médico da alopecia",c1p:"Avaliação e plano personalizado. PRP e mesoterapia capilar, presencial em Barcelona. Homens e mulheres.",
+c2:"Consulta online + receita QR",c2p:"Videoconsulta médica. Receita eletrônica com QR válida nas farmácias da Espanha, se indicada.",
+how:"Como funciona",s1:"Escolha dia e horário na agenda (segunda a sexta, 10–20 h).",s2:"O Dr. Celle informa o valor pelo WhatsApp e você paga por Revolut ou Bizum.",ask:"Valor pelo WhatsApp",s3:"Preencha o formulário de confirmação nesta página.",s4:"Confirmamos pelo WhatsApp com o endereço da clínica ou o link da videochamada.",
+b1:"1 · Escolher dia e horário",payh:"Formas de pagamento",open:"Abrir",cp:"Copiar",rev:"Com Revolut o pagamento é instantâneo e sem taxas entre contas Revolut. Bizum: apenas contas bancárias espanholas.",
+fh:"2 · Confirme sua consulta",fp:"Depois de pagar, preencha seus dados. Eles chegam diretamente ao Dr. Celle.",f_tr:"Tratamento escolhido",f_nm:"Nome completo",f_dob:"Data de nascimento",f_ph:"Telefone / WhatsApp",f_dt:"Data da consulta agendada",f_pm:"Forma de pagamento",f_ref:"Titular do pagamento / referência",f_ok:"Aceito que o Dr. Ricardo Celle trate meus dados para gerir minha consulta (RGPD).",
+b2:"Enviar confirmação",f_thx:"Obrigado! Recebemos seus dados. Último passo: envie o comprovante do pagamento pelo WhatsApp.",b3:"WhatsApp: enviar comprovante",dates:"A consulta é confirmada ao recebermos o pagamento. Alterações até 24 h antes.",
+vip:"Grupo VIP de pacientes",vipp:"Promoções, novidades e dicas médicas antes de todos.",b4:"Entrar no grupo VIP",wa:"Olá Dr. Celle, agendei e paguei minha consulta. Envio o comprovante."},
+en:{eye:"Barcelona · Online · 6 languages",h1:"Book your appointment",sub:"Personal care by Dr. Ricardo Celle, licensed physician in Barcelona.",
+c1:"Medical hair-loss treatment",c1p:"Assessment and personalised plan. PRP and scalp mesotherapy, in person in Barcelona. Men and women.",
+c2:"Online consultation + QR prescription",c2p:"Video consultation. Electronic prescription with QR code, valid in Spanish pharmacies, when indicated.",
+how:"How it works",s1:"Pick a day and time (Monday–Friday, 10:00–20:00).",s2:"Dr. Celle tells you the fee on WhatsApp; pay by Revolut or Bizum (Spain).",ask:"Fee on WhatsApp",s3:"Fill in the confirmation form on this page.",s4:"We confirm on WhatsApp with the clinic address or the video-call link.",
+b1:"1 · Pick day and time",payh:"Payment",open:"Open",cp:"Copy",rev:"Revolut payments are instant and free between Revolut accounts. Bizum works only with Spanish bank accounts.",
+fh:"2 · Confirm your appointment",fp:"After paying, enter your details. They go directly to Dr. Celle.",f_tr:"Chosen treatment",f_nm:"Full name",f_dob:"Date of birth",f_ph:"Phone / WhatsApp",f_dt:"Date of your booked appointment",f_pm:"Payment method",f_ref:"Payer name / reference",f_ok:"I agree that Dr. Ricardo Celle processes my data to manage my appointment (GDPR).",
+b2:"Send confirmation",f_thx:"Thank you! We have received your details. Last step: send the payment screenshot on WhatsApp.",b3:"WhatsApp: send receipt",dates:"Your appointment is confirmed once payment is received. Changes up to 24 h before.",
+vip:"VIP patient group",vipp:"Offers, news and medical tips before anyone else.",b4:"Join the VIP group",wa:"Hello Dr. Celle, I have booked and paid my appointment. Sending the receipt."},
+ru:{eye:"Барселона · Онлайн · 6 языков",h1:"Запишитесь на приём",sub:"Индивидуальный подход — доктор Рикардо Селле, лицензированный врач в Барселоне. Говорим по-русски.",
+c1:"Медицинское лечение алопеции",c1p:"Осмотр и индивидуальный план. PRP и мезотерапия кожи головы, очно в Барселоне. Мужчины и женщины.",
+c2:"Онлайн-консультация + рецепт QR",c2p:"Видеоконсультация врача. Электронный рецепт с QR-кодом для аптек Испании, если показан.",
+how:"Как это работает",s1:"Выберите день и время (пн–пт, 10:00–20:00).",s2:"Доктор Селле сообщит стоимость в WhatsApp, оплата через Revolut или Bizum.",ask:"Стоимость — в WhatsApp",s3:"Заполните форму подтверждения на этой странице.",s4:"Мы подтвердим запись в WhatsApp: адрес клиники или ссылка на видеозвонок.",
+b1:"1 · Выбрать день и время",payh:"Оплата",open:"Открыть",cp:"Копировать",rev:"Через Revolut оплата мгновенная и без комиссии между счетами Revolut. Bizum — только для испанских банковских счетов.",
+fh:"2 · Подтвердите запись",fp:"После оплаты заполните данные — они придут напрямую доктору Селле.",f_tr:"Выбранная услуга",f_nm:"Имя и фамилия",f_dob:"Дата рождения",f_ph:"Телефон / WhatsApp",f_dt:"Дата записи",f_pm:"Способ оплаты",f_ref:"Плательщик / номер операции",f_ok:"Я согласен(-на) на обработку моих данных доктором Рикардо Селле для записи (GDPR).",
+b2:"Отправить подтверждение",f_thx:"Спасибо! Данные получены. Последний шаг: отправьте скриншот оплаты в WhatsApp.",b3:"WhatsApp: отправить чек",dates:"Запись подтверждается после получения оплаты. Изменения — не позднее чем за 24 часа.",
+vip:"VIP-группа пациентов",vipp:"Акции, новости и советы врача раньше всех.",b4:"Вступить в VIP-группу",wa:"Здравствуйте, доктор Селле! Я записался(-ась) и оплатил(а) приём. Отправляю чек."},
+it:{eye:"Barcellona · Online · 6 lingue",h1:"Prenota la tua visita",sub:"Assistenza personalizzata con il Dr. Ricardo Celle, medico iscritto all'Ordine di Barcellona.",
+c1:"Trattamento medico dell'alopecia",c1p:"Valutazione e piano personalizzato. PRP e mesoterapia del cuoio capelluto, in presenza a Barcellona. Uomini e donne.",
+c2:"Visita online + ricetta QR",c2p:"Videoconsulto medico. Ricetta elettronica con QR valida nelle farmacie spagnole, se indicata.",
+how:"Come funziona",s1:"Scegli giorno e ora (lunedì–venerdì, 10–20).",s2:"Il Dr. Celle ti indica il prezzo su WhatsApp e paghi con Revolut o Bizum.",ask:"Prezzo su WhatsApp",s3:"Compila il modulo di conferma in questa pagina.",s4:"Ti confermiamo su WhatsApp con l'indirizzo della clinica o il link della videochiamata.",
+b1:"1 · Scegli giorno e ora",payh:"Pagamento",open:"Apri",cp:"Copia",rev:"Con Revolut il pagamento è istantaneo e senza commissioni tra conti Revolut. Bizum: solo conti bancari spagnoli.",
+fh:"2 · Conferma la visita",fp:"Dopo il pagamento, inserisci i tuoi dati. Arrivano direttamente al Dr. Celle.",f_tr:"Trattamento scelto",f_nm:"Nome e cognome",f_dob:"Data di nascita",f_ph:"Telefono / WhatsApp",f_dt:"Data della visita prenotata",f_pm:"Metodo di pagamento",f_ref:"Intestatario del pagamento / riferimento",f_ok:"Acconsento al trattamento dei miei dati da parte del Dr. Ricardo Celle per gestire la visita (GDPR).",
+b2:"Invia conferma",f_thx:"Grazie! Abbiamo ricevuto i tuoi dati. Ultimo passo: invia la ricevuta del pagamento su WhatsApp.",b3:"WhatsApp: invia ricevuta",dates:"La visita è confermata alla ricezione del pagamento. Modifiche fino a 24 h prima.",
+vip:"Gruppo VIP pazienti",vipp:"Offerte, novità e consigli medici prima di tutti.",b4:"Entra nel gruppo VIP",wa:"Buongiorno Dr. Celle, ho prenotato e pagato la visita. Invio la ricevuta."},
+fr:{eye:"Barcelone · En ligne · 6 langues",h1:"Prenez rendez-vous",sub:"Prise en charge personnalisée par le Dr Ricardo Celle, médecin inscrit à l'Ordre de Barcelone.",
+c1:"Traitement médical de l'alopécie",c1p:"Bilan et plan personnalisé. PRP et mésothérapie du cuir chevelu, en cabinet à Barcelone. Hommes et femmes.",
+c2:"Consultation en ligne + ordonnance QR",c2p:"Téléconsultation médicale. Ordonnance électronique avec QR, valable dans les pharmacies espagnoles, si indiquée.",
+how:"Comment ça marche",s1:"Choisissez le jour et l'heure (lundi–vendredi, 10 h–20 h).",s2:"Le Dr Celle vous indique le tarif sur WhatsApp ; réglez par Revolut ou Bizum.",ask:"Tarif sur WhatsApp",s3:"Remplissez le formulaire de confirmation sur cette page.",s4:"Nous confirmons sur WhatsApp avec l'adresse de la clinique ou le lien de la visio.",
+b1:"1 · Choisir jour et heure",payh:"Paiement",open:"Ouvrir",cp:"Copier",rev:"Avec Revolut, le paiement est instantané et sans frais entre comptes Revolut. Bizum : comptes bancaires espagnols uniquement.",
+fh:"2 · Confirmez votre rendez-vous",fp:"Après le paiement, indiquez vos coordonnées. Elles arrivent directement au Dr Celle.",f_tr:"Traitement choisi",f_nm:"Nom et prénom",f_dob:"Date de naissance",f_ph:"Téléphone / WhatsApp",f_dt:"Date du rendez-vous réservé",f_pm:"Mode de paiement",f_ref:"Titulaire du paiement / référence",f_ok:"J'accepte que le Dr Ricardo Celle traite mes données pour gérer mon rendez-vous (RGPD).",
+b2:"Envoyer la confirmation",f_thx:"Merci ! Nous avons bien reçu vos données. Dernière étape : envoyez la capture du paiement sur WhatsApp.",b3:"WhatsApp : envoyer le reçu",dates:"Le rendez-vous est confirmé à réception du paiement. Modifications jusqu'à 24 h avant.",
+vip:"Groupe VIP patients",vipp:"Offres, nouveautés et conseils médicaux en avant-première.",b4:"Rejoindre le groupe VIP",wa:"Bonjour Dr Celle, j'ai réservé et payé mon rendez-vous. J'envoie le reçu."}};
+const FORM="https://docs.google.com/forms/d/e/1FAIpQLScLTYnmXmqCGm8xTsKafr7uwblsQDPAswlnOCO7DgcuC11LIw/formResponse";
+const E={tr:475039497,nm:1451122450,dob:1408548161,em:203747931,ph:1404997717,dt:1866208624,pm:1353100284,ref:89963232};
+const TRV=["Consulta online + receta electrónica con QR","Tratamiento médico de la alopecia (PRP / mesoterapia capilar)"];
+const PMV=["Revolut (@ricardocelle)","Bizum (+34 685 921 660)"];
+const L=document.getElementById('lang');let cur=(new URLSearchParams(location.search).get('lang'))||(navigator.language||'es').slice(0,2);if(!T[cur])cur='es';
+function set(l){cur=l;document.documentElement.lang=l;document.querySelectorAll('[data-t]').forEach(e=>{const v=T[l][e.dataset.t];if(v!=null)e.textContent=v});
+document.getElementById('wa').href='https://wa.me/34685921660?text='+encodeURIComponent(T[l].wa);[...L.children].forEach(b=>b.classList.toggle('on',b.dataset.l===l))}
+Object.keys(T).forEach(k=>{const b=document.createElement('button');b.textContent=k.toUpperCase();b.dataset.l=k;b.onclick=()=>set(k);L.appendChild(b)});
+document.addEventListener('click',e=>{const c=e.target.closest('[data-c]');if(c){navigator.clipboard&&navigator.clipboard.writeText(c.dataset.c);const o=c.textContent;c.textContent='✓';setTimeout(()=>c.textContent=o,1500)}});
+function addDate(p,id,v){if(!v)return;const[y,m,d]=v.split('-');p.append('entry.'+id+'_year',y);p.append('entry.'+id+'_month',String(+m));p.append('entry.'+id+'_day',String(+d))}
+document.getElementById('cf').addEventListener('submit',async ev=>{ev.preventDefault();const f=ev.target,fd=new FormData(f),p=new URLSearchParams();
+const tr=TRV[fd.get('tr')],pm=PMV[fd.get('pm')];
+p.append('entry.'+E.tr,tr);p.append('entry.'+E.nm,fd.get('nm'));addDate(p,E.dob,fd.get('dob'));p.append('entry.'+E.em,fd.get('em'));p.append('entry.'+E.ph,fd.get('ph'));addDate(p,E.dt,fd.get('dt'));p.append('entry.'+E.pm,pm);p.append('entry.'+E.ref,(fd.get('ref')||'')+' [web '+cur+']');
+const btn=f.querySelector('button');btn.disabled=true;btn.textContent='…';
+try{await fetch(FORM,{method:'POST',mode:'no-cors',body:p})}catch(e){}
+const msg=T[cur].wa+'\n'+fd.get('nm')+' · '+tr+' · '+(fd.get('dt')||'');
+document.getElementById('wa2').href='https://wa.me/34685921660?text='+encodeURIComponent(msg);f.hidden=true;document.getElementById('done').hidden=false;document.getElementById('done').scrollIntoView({behavior:'smooth'})});
+set(cur);
+</script><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1933e7edec554513a8339d329ac5e9fc"}'></script>
+</body></html>
